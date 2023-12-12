@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB6A0193-722C-4134-A380-8BD00F43AA0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ADCBookApp</RootNamespace>
+    <AssemblyName>ADCBookApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditBillFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditBillFrm.designer.cs">
+      <DependentUpon>AddEditBillFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditCompanyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditCompanyFrm.designer.cs">
+      <DependentUpon>AddEditCompanyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditAuthorFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditAuthorFrm.designer.cs">
+      <DependentUpon>AddEditAuthorFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditBookFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditBookFrm.designer.cs">
+      <DependentUpon>AddEditBookFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditCustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditCustomerFrm.designer.cs">
+      <DependentUpon>AddEditCustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditDiscountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditDiscountFrm.designer.cs">
+      <DependentUpon>AddEditDiscountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditExchangeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditExchangeFrm.designer.cs">
+      <DependentUpon>AddEditExchangeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditOrderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditOrderFrm.designer.cs">
+      <DependentUpon>AddEditOrderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditTypeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditTypeFrm.designer.cs">
+      <DependentUpon>AddEditTypeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Author.cs" />
+    <Compile Include="Bill.cs" />
+    <Compile Include="BillBook.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookDetal.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Custommer.cs" />
+    <Compile Include="DetailBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailBill.Designer.cs">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discount.cs" />
+    <Compile Include="ExchangeBook.cs" />
+    <Compile Include="HomeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeFrm.designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvalidEmailException.cs" />
+    <Compile Include="InvalidCompanyNameException.cs" />
+    <Compile Include="InvalidNameException.cs" />
+    <Compile Include="InvalidPhoneNumberException.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type.cs" />
+    <EmbeddedResource Include="AddEditBillFrm.resx">
+      <DependentUpon>AddEditBillFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditCompanyFrm.resx">
+      <DependentUpon>AddEditCompanyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditAuthorFrm.resx">
+      <DependentUpon>AddEditAuthorFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditBookFrm.resx">
+      <DependentUpon>AddEditBookFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditCustomerFrm.resx">
+      <DependentUpon>AddEditCustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditDiscountFrm.resx">
+      <DependentUpon>AddEditDiscountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditExchangeFrm.resx">
+      <DependentUpon>AddEditExchangeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditOrderFrm.resx">
+      <DependentUpon>AddEditOrderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditTypeFrm.resx">
+      <DependentUpon>AddEditTypeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailBill.resx">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
