@@ -1,5 +1,7 @@
-﻿CREATE DATABASE DataADCBook;
+CREATE DATABASE DataADCBook;
 USE DataADCBook;
+SELECT * from dbo.Bill;
+
 CREATE TABLE Company (
 	idCompany INT PRIMARY KEY IDENTITY,
 	nameCompany NVARCHAR(100) NOT NULL,
@@ -37,7 +39,8 @@ CREATE TABLE Book (
 	nameAuthor NVARCHAR(100) NOT NULL,
 	nameType NVARCHAR(100) NOT NULL,
 	number INT NOT NULL,
-	price FLOAT NOT NULL,
+	priceI FLOAT NOT NULL,
+	priceO FLOAT NOT NULL
 );
 
 CREATE TABLE Discount (
@@ -82,3 +85,12 @@ CREATE TABLE [Order] (
 	StatusOrder VARCHAR(100) NOT NULL,
 	BillDate DATETIME
 );
+
+CREATE TABLE Employee(
+	idEmployee INT,
+	nameEmployee NVARCHAR(100),
+	positionEmployee NVARCHAR(100),
+	birthDay DATE,
+	sex NVARCHAR(100),
+	phoneNumber NVARCHAR(100)
+)
